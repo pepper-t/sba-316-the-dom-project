@@ -16,44 +16,50 @@
     <div class="word-counter-container">
         <h2>Word Counter</h2>
 
-        <h3>Want to know how many words are in your document?</h3>
+        <h3>Want to know how many words & characters are in your document?</h3><p></p>
 
-        <p>Word Counter is a simple application for counting the number of words, characters, and sentences in your
-            text.</p>
+        <h3>Want to know how long it takes to read your document?</h3><p></p>
+
+        <p>Word Counter is a simple application that calculates your document's number of words, characters, and its reading time!</p>
 
         <p>
-        <div id="howto"><big>I</big>nstructions</div> Type or paste your text in the textbox below and click the "Count
-        Words" button to see the word count for your text.</p>
+        <div id="howto"><u><big>I</big>nstructions</u></div></p>
 
-        <p>The results of your word count will appear below the textbox.</p>
+        <ul style="text-align: left;">
+            <li>Type or paste your message in the text box below.</li>
+            <li>The number of words and characters typed will be calculated.</li>
+            <li>An estimated read time is also calculated.</li>
+            <li>The results are displayed below the text box.</li>
+        </ul>
 
-        <p> You will see a visual representation of the word count, the number of characters, and sentences in your
-            writing.</p>
+        <p style="text-align: left"> The visual display of the word count, the number of characters, and reading time will update as you modify your message in real-time.</p>
 
-               <hr style=width:70%;>
+        <hr style=width:70%;>
         <textarea id="textArea" cols="30" rows="10" placeholder="Type or paste your text here..."></textarea>
 
-        <!-- Counts words/characters. Javascript code records & displays word/characters count -->
-<div id="results">
-        <div id="wordCount"></div>  <!--Count words -->
-       <div id="charsCount"></div> <!--Count characters -->
-       
-</div>
+        <!-- Counts words/characters. Javascript code records & displays word/characters count and read time -->
+        <div id="results">
+            <!-- <div id="wordCount"></div>  Count words -->
+            <!-- <div id="charsCount"></div>Count characters  -->
+            <span id="wordCount">Words: 0</span> <!-- Count words -->
+            <span id="charsCount">Characters: 0</span> <!-- Count characters -->
+            <span id="readTime">Read Time: 0 min</span> <!-- Estimated reading time -->
+        </div>
 
-        <!-- <button id="countButton">Count Words</button>-->
-        <div id="menu">
-            <!-- <button id="countButton">Count Words</button>-->
+        <!-- clearButton clears the text area when clicked-->
+        <div id="buttons">
+
             <button id="clearButton">Clear Text</button>
         </div>
-       
+
 
     </div>
     <!-- DISPLAY THE DATA HERE -->
 
 
 
-   <script defer src="wordcounter.js"></script>
-     <!-- <script defer src="copy.js"></script>-->
+    <!-- <script defer src="wordcounter.js"></script> -->
+    <script defer src="copy.js"></script>
 </body>
 
 </html>
