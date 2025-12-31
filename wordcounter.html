@@ -1,18 +1,59 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Counter Application</title>
+    <title>The DOM Project - Word Counter Application</title>
     <link rel="stylesheet" href="wordcounter.css">
-    <script defer src="wordcounter.js"></script>
+
 
 
 
 </head>
+
 <body>
-    
+    <div class="word-counter-container">
+        <h2>Word Counter</h2>
+
+        <h3>Want to know how many words are in your document?</h3>
+
+        <p>Word Counter is a simple application for counting the number of words, characters, and sentences in your
+            text.</p>
+
+        <p>
+        <div id="howto"><big>I</big>nstructions</div> Type or paste your text in the textbox below and click the "Count
+        Words" button to see the word count for your text.</p>
+
+        <p>The results of your word count will appear below the textbox.</p>
+
+        <p> You will see a visual representation of the word count, the number of characters, and sentences in your
+            writing.</p>
+
+               <hr style=width:70%;>
+        <textarea id="textArea" cols="30" rows="10" placeholder="Type or paste your text here..."></textarea>
+
+        <!-- Counts words/characters. Javascript code records & displays word/characters count -->
+<div id="results">
+        <div id="wordCount"></div>  <!--Count words -->
+       <div id="charsCount"></div> <!--Count characters -->
+       
+</div>
+
+        <!-- <button id="countButton">Count Words</button>-->
+        <div id="menu">
+            <!-- <button id="countButton">Count Words</button>-->
+            <button id="clearButton">Clear Text</button>
+        </div>
+       
+
+    </div>
+    <!-- DISPLAY THE DATA HERE -->
+
+
+
+   <script defer src="wordcounter.js"></script>
+     <!-- <script defer src="copy.js"></script>-->
 </body>
+
 </html>
